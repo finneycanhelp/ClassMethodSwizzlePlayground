@@ -1,8 +1,7 @@
-//: Playground - noun: a place where people can play
 
 import Foundation
 
-class SomeTestClass: NSObject {
+class SomeTestClass {
     
     dynamic class func forTesting_SaveSomeThings(someThings: [String]) {
         
