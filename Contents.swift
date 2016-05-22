@@ -13,9 +13,11 @@ class SomeTestClass {
 
     func someTestMethod() {
         
+        // swapped out the real code with the fake code
         method_exchangeImplementations(SomeTestClass.originalMethod, SomeTestClass.swizzledMethod)
         SomeClass.saveSomeThings(["some Things", "and more"])
 
+        // put the real code back
         method_exchangeImplementations(SomeTestClass.originalMethod, SomeTestClass.swizzledMethod)
         SomeClass.saveSomeThings(["some Things", "and more"])
     }
